@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Set charset to UTF-8 -->
+    <meta charset="utf-8">
+
+    <div class="title">
+        <title>PGP Suite</title>
+    </div>
+
+    <meta name="description" content="A simple and easy to use client-side PGP system.">
+    <meta name="author" content="Heiswayi Nrird">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" media="screen">
+    <!--[if IE 9]>
+        <script type="text/javascript" src="index_files/js/placeholder.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row content">
+            <div class="col-md-7">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Your Message in Plain Text</h3>
+                    </div>
+                    <div class="panel-body">
+                        <textarea class="form-control message" rows="7" id="signencrypt-plain-text" placeholder="Write your message here."></textarea>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" id="signencrypt-button" title="If the private key is not provided, the encryption will be performed just by the public key.">Encrypt the message</button>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+   
+    <script type="text/javascript" src="assets/js/FileSaver.js"></script>
+    <script type="text/javascript" src="assets/js/pgpkeygen.js"></script>
+    <script type="text/javascript" src="assets/js/kbpgp.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>

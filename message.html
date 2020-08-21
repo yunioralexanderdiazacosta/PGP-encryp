@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Set charset to UTF-8 -->
+    <meta charset="utf-8">
+
+    <div class="title">
+        <title>PGP Suite</title>
+    </div>
+
+    <meta name="description" content="A simple and easy to use client-side PGP system.">
+    <meta name="author" content="Heiswayi Nrird">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if IE 9]>
+        <script type="text/javascript" src="index_files/js/placeholder.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="panel-body"><div id="resultado"></div></div>           
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $('#resultado').text(localStorage.getItem("cifrado"));
+        })
+    </script>
+</body>
+</html>
